@@ -7,25 +7,25 @@ namespace BubbleSort
         static void Main(string[] args)
         {
            
-            int[] arr = { 4,15,10,45 };
+            int[] Zahl = { 4,15,10,45};
             int temp;
-            for (int j = 0; j <= arr.Length - 2; j++)
+            for (int j = 0; j <= Zahl.Length - 2; j++)
             {
-                for (int i = 0; i <= arr.Length - 2; i++)
+                for (int i = 0; i <= Zahl.Length - 2; i++)
                 {
-                    if (arr[i] > arr[i + 1])
+                    if (Zahl[i] > Zahl[i + 1])
                     {
-                        temp = arr[i + 1];
-                        arr[i + 1] = arr[i];
-                        arr[i] = temp;
+                        temp = Zahl[i + 1];
+                        Zahl[i + 1] = Zahl[i];
+                        Zahl[i] = temp;
                         
                     }
-                    showArray(arr);
+                    showArray(Zahl);
                 }
             } 
           
             Console.WriteLine("Sortiert:");
-            foreach (int p in arr)
+            foreach (int p in Zahl)
                 Console.Write(p + " ");
             
             Console.Read();
